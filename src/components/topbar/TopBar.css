@@ -1,0 +1,67 @@
+.topbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(247, 243, 239); /*RGB(226, 214, 255)*/
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center; /*Align items/content inside this parent verticially center*/
+    font-family: 'Ubuntu',sans-serif;
+    z-index: 5px;
+}
+
+.topbar-left,
+.topbar-right
+ {
+    flex: 3; /*Occupy 3 columns from total of 12*/
+    display: flex;
+    align-items: center; /*Align items/content inside this parent verticially center*/
+    justify-content: center; /*Align items/content inside this parent horizontally center*/
+}
+
+.topbar-center {
+    flex: 6;
+}
+
+.topbar-profile {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; /*It will make the image as circle*/
+    object-fit: cover; /*It will resize the image or video to fit to the container size i.e. here is 45px by 45px*/
+}
+
+.topbar-social-icon{
+    margin-right: 12px;
+    cursor: pointer; /*Shows hand on hover over the icon*/
+    color: var(--primary-color);
+}
+
+.topbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-color: #00b386;*/
+    margin: 0px;
+    padding: 0px;
+    list-style: none; /*Get rid of dots from the li tag*/
+}
+
+.topbar-list-item{
+    margin-right: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.topbar-search{
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
